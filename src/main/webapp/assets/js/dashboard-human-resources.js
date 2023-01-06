@@ -226,9 +226,12 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Сўнгги 7 кунда',
+                name: 'Қиймати: ',
                 data: data1
             }],
+            xaxis: {
+                categories: data2
+            },
             stroke: {
                 width: 2.5,
                 curve: 'smooth',
@@ -236,9 +239,7 @@ $(function () {
             },
             tooltip: {
                 theme: 'dark',
-                x: {
-                    show: false
-                },
+                enable: true
             }
         }
         new ApexCharts(document.querySelector("#risk14"), options1).render();
@@ -271,9 +272,12 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Сўнгги 7 кунда',
+                name: 'Қиймати: ',
                 data: data1
             }],
+            xaxis: {
+                categories: data2
+            },
             stroke: {
                 width: 2.5,
                 curve: 'smooth',
@@ -281,10 +285,7 @@ $(function () {
             },
             tooltip: {
                 theme: 'dark',
-                x: {
-                    show: false
-                },
-
+                enable: true
             }
         }
         new ApexCharts(document.querySelector("#risk27"), options1).render();
@@ -318,9 +319,12 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Сўнгги 7 кунда',
+                name: 'Қиймати: ',
                 data: data1
             }],
+            xaxis: {
+                categories: data2
+            },
             stroke: {
                 width: 2.5,
                 curve: 'smooth',
@@ -328,9 +332,7 @@ $(function () {
             },
             tooltip: {
                 theme: 'dark',
-                x: {
-                    show: false
-                },
+                enable: true
             }
         }
         new ApexCharts(document.querySelector("#risk9"), options1).render();

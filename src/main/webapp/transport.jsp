@@ -76,9 +76,9 @@
                     <div class="menu-title">ТЕМИР ЙЎЛ</div>
                 </a>
                 <ul>
-                    <li><a href="#"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    <li><a href="temUmum.jsp"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
                     </li>
-                    <li><a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    <li><a href="#"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
                 </ul>
             </li>
@@ -89,9 +89,9 @@
                     <div class="menu-title">АВИА</div>
                 </a>
                 <ul>
-                    <li><a href="avtoUmum.html"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    <li><a href="#"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
                     </li>
-                    <li><a href="avtoNostandart.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    <li><a href="#"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
                 </ul>
             </li>
