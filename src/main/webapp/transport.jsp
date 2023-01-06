@@ -50,9 +50,9 @@
                     <div class="menu-title"> ТИФ</div>
                 </a>
                 <ul>
-                    <li><a href="tifUmum.html"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    <li><a href="tifUmum.jsp"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
                     </li>
-                    <li><a href="tifNostandart.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    <li><a href="tifNostandart.jsp"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
                 </ul>
             </li>

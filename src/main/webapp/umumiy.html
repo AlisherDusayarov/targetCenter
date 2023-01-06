@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--favicon-->
+    <link rel="icon" href="assets/images/gtk_image.png" type="image/png"/>
+    <!--plugins-->
+    <link href="assets/plugins/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet"/>
+    <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
+    <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet"/>
+    <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet"/>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="assets/css/app.css" rel="stylesheet">
+    <link href="assets/css/icons.css" rel="stylesheet">
+
+    <title>Таргетлаш маркази</title>
+</head>
+
+<body class="bg-theme bg-theme1">
+<!--wrapper-->
+<div class="wrapper">
+    <!--sidebar wrapper -->
+    <div class="sidebar-wrapper" data-simplebar="true">
+        <div class="sidebar-header">
+            <div>
+                <img src="assets/images/gtk_image.png" class="logo-icon" alt="logo icon">
+            </div>
+            <div>
+                <h4 class="logo-text">Таргетлаш маркази</h4>
+            </div>
+            <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+            </div>
+        </div>
+        <!--navigation-->
+        <ul class="metismenu" id="menu">
+            <li>
+                <a href="#" class="has-arrow">
+                    <div class="parent-icon"><i class='bx bx-home-circle'></i>
+                    </div>
+                    <div class="menu-title"> ТИФ</div>
+                </a>
+                <ul>
+                    <li><a href="tifUmum.jsp"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    </li>
+                    <li><a href="tifNostandart.jsp"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-arrow">
+                    <div class="parent-icon"><i class="bx bx-category"></i>
+                    </div>
+                    <div class="menu-title">АВТО</div>
+                </a>
+                <ul>
+                    <li><a href="avtoUmum.html"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    </li>
+                    <li><a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-arrow">
+                    <div class="parent-icon"><i class="bx bx-category"></i>
+                    </div>
+                    <div class="menu-title">ТЕМИР ЙЎЛ</div>
+                </a>
+                <ul>
+                    <li><a href="#"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    </li>
+                    <li><a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="has-arrow">
+                    <div class="parent-icon"><i class="bx bx-category"></i>
+                    </div>
+                    <div class="menu-title">АВИА</div>
+                </a>
+                <ul>
+                    <li><a href="avtoUmum.html"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    </li>
+                    <li><a href="avtoNostandart.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+        </ul>
+        <!--end navigation-->
+    </div>
+    <!--end sidebar wrapper -->
+    <!--start header -->
+    <header>
+        <div class="topbar d-flex align-items-center">
+            <nav class="navbar navbar-expand">
+                <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+                </div>
+                <div class="top-menu ">
+                    <ul class="navbar-nav align-items-center">
+
+                        <li class="nav-item dropdown dropdown-large">
+                            <a href="#" class="font-18">
+                                <i class='bx bx-map text-warning '></i> Умумий маълумотнома
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="top-menu ms-auto">
+                    <ul class="navbar-nav align-items-center">
+
+                        <li class="nav-item dropdown dropdown-large">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">7</span>
+                                <i class='bx bx-bell'></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="javascript:;">
+                                    <div class="msg-header">
+                                        <p class="msg-header-title">Notifications</p>
+                                        <p class="msg-header-clear ms-auto">Marks all as read</p>
+                                    </div>
+                                </a>
+                                <div class="header-notifications-list">
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class="bx bx-group"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">New Customers<span class="msg-time float-end">14 Sec
+												ago</span></h6>
+                                                <p class="msg-info">5 new user registered</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class="bx bx-cart-alt"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">New Orders <span class="msg-time float-end">2 min
+												ago</span></h6>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class="bx bx-file"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">24 PDF File<span class="msg-time float-end">19 min
+												ago</span></h6>
+                                                <p class="msg-info">The pdf files generated</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class="bx bx-send"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Time Response <span class="msg-time float-end">28 min
+												ago</span></h6>
+                                                <p class="msg-info">5.1 min avarage time response</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class="bx bx-home-circle"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">New Product Approved <span
+                                                        class="msg-time float-end">2 hrs ago</span></h6>
+                                                <p class="msg-info">Your new product has approved</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class="bx bx-message-detail"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">New Comments <span class="msg-time float-end">4 hrs
+												ago</span></h6>
+                                                <p class="msg-info">New customer comments recived</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class='bx bx-check-square'></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Your item is shipped <span
+                                                        class="msg-time float-end">5 hrs
+												ago</span></h6>
+                                                <p class="msg-info">Successfully shipped your item</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class='bx bx-user-pin'></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">New 24 authors<span class="msg-time float-end">1 day
+												ago</span></h6>
+                                                <p class="msg-info">24 new authors joined last week</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify"><i class='bx bx-door-open'></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Defense Alerts <span class="msg-time float-end">2 weeks
+												ago</span></h6>
+                                                <p class="msg-info">45% less alerts last 4 weeks</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="javascript:;">
+                                    <div class="text-center msg-footer">View All Notifications</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-large">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative" href="#"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false"> <span class="alert-count">8</span>
+                                <i class='bx bx-comment'></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+
+                                <div class="header-message-list">
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-1.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Daisy Anderson <span class="msg-time float-end">5 sec
+												ago</span></h6>
+                                                <p class="msg-info">The standard chunk of lorem</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-2.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Althea Cabardo <span class="msg-time float-end">14
+												sec ago</span></h6>
+                                                <p class="msg-info">Many desktop publishing packages</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-3.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Oscar Garner <span class="msg-time float-end">8 min
+												ago</span></h6>
+                                                <p class="msg-info">Various versions have evolved over</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-4.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Katherine Pechon <span class="msg-time float-end">15
+												min ago</span></h6>
+                                                <p class="msg-info">Making this the first true generator</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-5.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Amelia Doe <span class="msg-time float-end">22 min
+												ago</span></h6>
+                                                <p class="msg-info">Duis aute irure dolor in reprehenderit</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-6.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Cristina Jhons <span class="msg-time float-end">2 hrs
+												ago</span></h6>
+                                                <p class="msg-info">The passage is attributed to an unknown</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-7.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">James Caviness <span class="msg-time float-end">4 hrs
+												ago</span></h6>
+                                                <p class="msg-info">The point of using Lorem</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-8.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Peter Costanzo <span class="msg-time float-end">6 hrs
+												ago</span></h6>
+                                                <p class="msg-info">It was popularised in the 1960s</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-9.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">David Buckley <span class="msg-time float-end">2 hrs
+												ago</span></h6>
+                                                <p class="msg-info">Various versions have evolved over</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-10.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Thomas Wheeler <span class="msg-time float-end">2 days
+												ago</span></h6>
+                                                <p class="msg-info">If you are going to use a passage</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="user-online">
+                                                <img src="assets/images/avatars/avatar-11.png" class="msg-avatar"
+                                                     alt="user avatar">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="msg-name">Johnny Seitz <span class="msg-time float-end">5 days
+												ago</span></h6>
+                                                <p class="msg-info">All the Lorem Ipsum generators</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!--end header -->
+    <!--start page wrapper -->
+    <div class="page-wrapper">
+        <div class="page-content">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <h6 class="mb-0 text-uppercase text-center">Автомобиль чегара божхона постлари тўғрисида умумий
+                        маълумот
+                    </h6>
+                    <hr/>
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-bordered mb-0 table-hover text-center font-18"
+                                   style="vertical-align: middle!important;">
+                                <thead>
+                                <tr>
+                                    <th scope="col">№</th>
+                                    <th scope="col">Ҳудудий бошқарма</th>
+                                    <th scope="col">Чегара божхона пости</th>
+                                    <th scope="col">Штат бирлиги</th>
+                                    <th scope="col">Иш режими</th>
+                                    <th scope="col">Чегарадош давлат</th>
+
+
+                                </tr>
+                                </thead>
+
+                                <tbody class="justify-content-center">
+
+                                <!--                                Qoraqalpog'iston res.-->
+
+                                <tr>
+
+
+                                    <th scope="row" rowspan="2">1</th>
+                                    <td rowspan="2"> Қорақалпоғистон Р.</td>
+                                    <td>“Хўжайли”</td>
+                                    <td>15</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td> “Доут-ота”</td>
+                                    <td>106</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+
+
+                                </tr>
+
+                                <!--                                Andijon vil.-->
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td> Андижон вилояти</td>
+                                    <td>“Дўстлик”</td>
+                                    <td>112</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+
+                                </tr>
+
+
+                                <!--                                Buxoro vil.-->
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td> Бухоро вилояти</td>
+                                    <td>“Олот”</td>
+                                    <td>95</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+
+                                </tr>
+
+
+                                <!--                                Jizzax vil.-->
+
+                                <tr>
+                                    <th scope="row" rowspan="2">4</th>
+                                    <td rowspan="2"> Жиззах вилояти</td>
+                                    <td>“Учтўрғон”</td>
+                                    <td>11</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+
+                                </tr>
+                                <tr>
+                                    <td> “Қушканд”</td>
+                                    <td>12</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+
+                                </tr>
+
+                                <!--                                Qashqadaryo-->
+
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td> Қашқадарё вилояти</td>
+                                    <td>“Қарши-Керки”</td>
+                                    <td>22</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+
+                                </tr>
+
+                                <!--                                Namangan vil.-->
+
+                                <tr>
+                                    <th scope="row" rowspan="2">6</th>
+                                    <td rowspan="2"> Наманган вилояти</td>
+                                    <td>“Поп”</td>
+                                    <td>16</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+
+                                </tr>
+                                <tr>
+                                    <td> “Косонсой”</td>
+                                    <td>15</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+
+
+                                <!--                                Samarqand-->
+
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td> Самарканд вилояти</td>
+                                    <td>“Жартепа”</td>
+                                    <td>38</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+
+                                </tr>
+
+                                <!--                                Sirdaryo vil.-->
+
+                                <tr>
+                                    <th scope="row" rowspan="2">8</th>
+                                    <td rowspan="2"> Сирдарё вилояти</td>
+                                    <td>“Сирдарё”</td>
+                                    <td>113</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+
+                                </tr>
+                                <tr>
+                                    <td> “Ховособод”</td>
+                                    <td>18</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+
+                                <!--                                Surxondaryo viloyati-->
+
+                                <tr>
+                                    <th scope="row" rowspan="3">9</th>
+                                    <td rowspan="3"> Сурхондарё вилояти</td>
+                                    <td>“Сариосиё”</td>
+                                    <td>82</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td> “Айритом”</td>
+                                    <td>77</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-af"></i> Афғонистон</td>
+                                </tr>
+                                <tr>
+                                    <td> “Гулбахор”</td>
+                                    <td>24</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+
+                                <!--                                Toshkent viloyat-->
+
+                                <tr>
+                                    <th scope="row" rowspan="7">10</th>
+                                    <td rowspan="7"> Тошкент вилояти</td>
+                                    <td>“Яллама”</td>
+                                    <td>103</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Навоий”</td>
+                                    <td>89</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“С.Нажимов”</td>
+                                    <td>89</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Ойбек”</td>
+                                    <td>68</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Ғишткўприк”</td>
+                                    <td>106</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Фарход”</td>
+                                    <td>21</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Бекобод-авто”</td>
+                                    <td>17</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+
+                                <!--                                Farg'ona viloyati-->
+
+                                <tr>
+                                    <th scope="row" rowspan="6">11</th>
+                                    <td rowspan="6"> Фарғона вилояти</td>
+                                    <td>“Фарғона”</td>
+                                    <td>60</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Андархон”</td>
+                                    <td>24</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Ўзбекистон”</td>
+                                    <td>39</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+
+                                <tr>
+                                    <td>“Риштон”</td>
+                                    <td>12</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Ровот”</td>
+                                    <td>13</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Сўх”</td>
+                                    <td>24</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+
+                                <!-- Xorazm vil. -->
+
+                                <tr>
+                                    <th scope="row" rowspan="2">11</th>
+                                    <td rowspan="2"> Хоразм вилояти</td>
+                                    <td>“Дўстлик”</td>
+                                    <td>17</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Шовот”</td>
+                                    <td>20</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--end page wrapper -->
+    <!--start overlay-->
+    <script src="assets/js/highcharts/proj4.js"></script>
+    <script src="assets/js/highcharts/highmaps.js"></script>
+    <!--                <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>-->
+    <script src="assets/js/highcharts/offline-exporting.js"></script>
+    <script src="assets/js/highcharts/marker-clusters.js"></script>
+    <script src="assets/js/highcharts/coloraxis.js"></script>
+
+
+</div>
+<!--end wrapper-->
+<!--start switcher-->
+<div class="switcher-wrapper">
+    <div class="switcher-btn"><i class='bx bx-cog bx-spin'></i>
+    </div>
+    <div class="switcher-body">
+        <div class="d-flex align-items-center">
+            <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+            <button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
+        </div>
+        <hr/>
+        <p class="mb-0">Gaussian Texture</p>
+        <hr>
+
+        <ul class="switcher">
+            <li id="theme1"></li>
+            <li id="theme2"></li>
+            <li id="theme3"></li>
+            <li id="theme4"></li>
+            <li id="theme5"></li>
+            <li id="theme6"></li>
+        </ul>
+        <hr>
+        <p class="mb-0">Gradient Background</p>
+        <hr>
+
+        <ul class="switcher">
+            <li id="theme7"></li>
+            <li id="theme8"></li>
+            <li id="theme9"></li>
+            <li id="theme10"></li>
+            <li id="theme11"></li>
+            <li id="theme12"></li>
+            <li id="theme13"></li>
+            <li id="theme14"></li>
+            <li id="theme15"></li>
+        </ul>
+    </div>
+</div>
+<!--end switcher-->
+<!-- Bootstrap JS -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<!--plugins-->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
+<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
+<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+<script src="assets/plugins/chartjs/js/Chart.min.js"></script>
+<script src="assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="assets/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
+<script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
+<script src="assets/plugins/jquery-knob/excanvas.js"></script>
+<script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+<script>
+    $(function () {
+        $(".knob").knob();
+    });
+</script>
+<script src="assets/js/index.js"></script>
+<!--app JS-->
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
