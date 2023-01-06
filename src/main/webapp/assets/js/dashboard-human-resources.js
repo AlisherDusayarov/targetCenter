@@ -16,7 +16,6 @@ $(function () {
         dataType: 'json',
         async: false,
         success: function (response) {
-            console.log(response.autodecl_nostandard_week);
             for (var i = 0; i < response.autodecl_nostandard_week.length - 1; i++) {
                 week_date[i] = response.autodecl_nostandard_week[i].date;
                 risk8[i] = response.autodecl_nostandard_week[i].risk8;
@@ -26,12 +25,12 @@ $(function () {
                 risk17[i] = response.autodecl_nostandard_week[i].risk17;
                 risk27[i] = response.autodecl_nostandard_week[i].risk27;
             }
-            today_risk8 = parseInt(response.autodecl_nostandard_week[7].risk8);
-            today_risk9 = parseInt(response.autodecl_nostandard_week[7].risk9);
-            today_risk10 = parseInt(response.autodecl_nostandard_week[7].risk10);
-            today_risk14 = parseInt(response.autodecl_nostandard_week[7].risk14);
-            today_risk17 = parseInt(response.autodecl_nostandard_week[7].risk17);
-            today_risk27 = parseInt(response.autodecl_nostandard_week[7].risk27);
+            today_risk8 = parseInt(response.autodecl_nostandard_week[6].risk8);
+            today_risk9 = parseInt(response.autodecl_nostandard_week[6].risk9);
+            today_risk10 = parseInt(response.autodecl_nostandard_week[6].risk10);
+            today_risk14 = parseInt(response.autodecl_nostandard_week[6].risk14);
+            today_risk17 = parseInt(response.autodecl_nostandard_week[6].risk17);
+            today_risk27 = parseInt(response.autodecl_nostandard_week[6].risk27);
             console.log(today_risk10);
             Risk10(risk10, week_date);
             Risk17(risk17, week_date);
@@ -135,9 +134,12 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Сўнгги 7 кунда',
+                name: 'Қиймати: ',
                 data: data1
             }],
+            xaxis: {
+                categories: data2
+            },
             stroke: {
                 width: 2.5,
                 curve: 'smooth',
@@ -145,10 +147,7 @@ $(function () {
             },
             tooltip: {
                 theme: 'dark',
-                x: {
-                    show: false
-                },
-
+                enabled: true
             }
         }
         new ApexCharts(document.querySelector("#risk17"), options1).render();
@@ -181,9 +180,12 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Сўнгги 7 кунда',
+                name: 'Қиймати: ',
                 data: data1
             }],
+            xaxis: {
+                categories: data2
+            },
             stroke: {
                 width: 2.5,
                 curve: 'smooth',
@@ -191,10 +193,7 @@ $(function () {
             },
             tooltip: {
                 theme: 'dark',
-                x: {
-                    show: false
-                },
-
+                enabled: true
             }
         }
         new ApexCharts(document.querySelector("#risk8"), options1).render();
