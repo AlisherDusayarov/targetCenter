@@ -109,10 +109,13 @@ public class Region_Info_Control extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException { }
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    }
 
     @Override
-    public void destroy() { super.destroy(); }
+    public void destroy() {
+        super.destroy();
+    }
 
     /*private void sendAsJson(HttpServletResponse response, No_Action_SendInfo obj) throws IOException {
         response.setContentType("application/json");
