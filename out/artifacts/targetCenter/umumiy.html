@@ -1,12 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ADMIN
-  Date: 26.12.2022
-  Time: 9:56
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
+<!doctype html>
+<html lang="uz">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,12 +12,16 @@
     <link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet"/>
     <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet"/>
     <link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet"/>
+
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
     <link href="assets/css/icons.css" rel="stylesheet">
+
     <title>Таргетлаш маркази</title>
 </head>
+
 <body class="bg-theme bg-theme1">
 <!--wrapper-->
 <div class="wrapper">
@@ -31,9 +29,7 @@
     <div class="sidebar-wrapper" data-simplebar="true">
         <div class="sidebar-header">
             <div>
-                <a href="index.jsp">
-                    <img src="assets/images/gtk_image.png" class="logo-icon" alt="logo icon" />
-                </a>
+                <img src="assets/images/gtk_image.png" class="logo-icon" alt="logo icon">
             </div>
             <div>
                 <h4 class="logo-text">Таргетлаш маркази</h4>
@@ -54,6 +50,7 @@
                     </li>
                     <li><a href="tifNostandart.jsp"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
+
                 </ul>
             </li>
             <li>
@@ -63,10 +60,11 @@
                     <div class="menu-title">АВТО</div>
                 </a>
                 <ul>
-                    <li><a href="#" class="auto_common_statistics"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    <li><a href="avtoUmum.html"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
                     </li>
-                    <li><a href="#" class="auto_nostandard_statistics"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    <li><a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
+
                 </ul>
             </li>
             <li>
@@ -80,6 +78,7 @@
                     </li>
                     <li><a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
+
                 </ul>
             </li>
             <li>
@@ -93,8 +92,11 @@
                     </li>
                     <li><a href="avtoNostandart.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
+
                 </ul>
             </li>
+
+
         </ul>
         <!--end navigation-->
     </div>
@@ -104,6 +106,18 @@
         <div class="topbar d-flex align-items-center">
             <nav class="navbar navbar-expand">
                 <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+                </div>
+                <div class="top-menu ">
+                    <ul class="navbar-nav align-items-center">
+
+                        <li class="nav-item dropdown dropdown-large">
+                            <a href="#" class="font-18">
+                                <i class='bx bx-map text-warning '></i> Умумий маълумотнома
+                            </a>
+
+                        </li>
+
+                    </ul>
                 </div>
                 <div class="top-menu ms-auto">
                     <ul class="navbar-nav align-items-center">
@@ -233,6 +247,7 @@
                                 <i class='bx bx-comment'></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end">
+
                                 <div class="header-message-list">
                                     <a class="dropdown-item" href="javascript:;">
                                         <div class="d-flex align-items-center">
@@ -378,10 +393,12 @@
                                         </div>
                                     </a>
                                 </div>
+
                             </div>
                         </li>
                     </ul>
                 </div>
+
             </nav>
         </div>
     </header>
@@ -389,436 +406,311 @@
     <!--start page wrapper -->
     <div class="page-wrapper">
         <div class="page-content">
-            <div class="container-fluid">
-                <style>
-                    #container {
-                        height: 850px;
-                        min-width: 450px;
-                        max-width: 1800px;
-                        margin: 0 auto;
-                    }
 
-                    .highcharts-tooltip table th {
-                        padding-bottom: 0.2em;
-                        border-bottom: 1px solid silver;
-                    }
-                </style>
-                <div id="container"></div>
-                <div class="clearfix"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <h6 class="mb-0 text-uppercase text-center">Автомобиль чегара божхона постлари тўғрисида умумий
+                        маълумот
+                    </h6>
+                    <hr/>
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-bordered mb-0 table-hover text-center font-18"
+                                   style="vertical-align: middle!important;">
+                                <thead>
+                                <tr>
+                                    <th scope="col">№</th>
+                                    <th scope="col">Ҳудудий бошқарма</th>
+                                    <th scope="col">Чегара божхона пости</th>
+                                    <th scope="col">Штат бирлиги</th>
+                                    <th scope="col">Иш режими</th>
+                                    <th scope="col">Чегарадош давлат</th>
+
+
+                                </tr>
+                                </thead>
+
+                                <tbody class="justify-content-center">
+
+                                <!--                                Qoraqalpog'iston res.-->
+
+                                <tr>
+
+
+                                    <th scope="row" rowspan="2">1</th>
+                                    <td rowspan="2"> Қорақалпоғистон Р.</td>
+                                    <td>“Хўжайли”</td>
+                                    <td>15</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+
+                                </tr>
+                                <tr>
+
+                                    <td> “Доут-ота”</td>
+                                    <td>106</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+
+
+                                </tr>
+
+                                <!--                                Andijon vil.-->
+
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td> Андижон вилояти</td>
+                                    <td>“Дўстлик”</td>
+                                    <td>112</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+
+                                </tr>
+
+
+                                <!--                                Buxoro vil.-->
+
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td> Бухоро вилояти</td>
+                                    <td>“Олот”</td>
+                                    <td>95</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+
+                                </tr>
+
+
+                                <!--                                Jizzax vil.-->
+
+                                <tr>
+                                    <th scope="row" rowspan="2">4</th>
+                                    <td rowspan="2"> Жиззах вилояти</td>
+                                    <td>“Учтўрғон”</td>
+                                    <td>11</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+
+                                </tr>
+                                <tr>
+                                    <td> “Қушканд”</td>
+                                    <td>12</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+
+                                </tr>
+
+                                <!--                                Qashqadaryo-->
+
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td> Қашқадарё вилояти</td>
+                                    <td>“Қарши-Керки”</td>
+                                    <td>22</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+
+                                </tr>
+
+                                <!--                                Namangan vil.-->
+
+                                <tr>
+                                    <th scope="row" rowspan="2">6</th>
+                                    <td rowspan="2"> Наманган вилояти</td>
+                                    <td>“Поп”</td>
+                                    <td>16</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+
+                                </tr>
+                                <tr>
+                                    <td> “Косонсой”</td>
+                                    <td>15</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+
+
+                                <!--                                Samarqand-->
+
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td> Самарканд вилояти</td>
+                                    <td>“Жартепа”</td>
+                                    <td>38</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+
+                                </tr>
+
+                                <!--                                Sirdaryo vil.-->
+
+                                <tr>
+                                    <th scope="row" rowspan="2">8</th>
+                                    <td rowspan="2"> Сирдарё вилояти</td>
+                                    <td>“Сирдарё”</td>
+                                    <td>113</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+
+                                </tr>
+                                <tr>
+                                    <td> “Ховособод”</td>
+                                    <td>18</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+
+                                <!--                                Surxondaryo viloyati-->
+
+                                <tr>
+                                    <th scope="row" rowspan="3">9</th>
+                                    <td rowspan="3"> Сурхондарё вилояти</td>
+                                    <td>“Сариосиё”</td>
+                                    <td>82</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td> “Айритом”</td>
+                                    <td>77</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-af"></i> Афғонистон</td>
+                                </tr>
+                                <tr>
+                                    <td> “Гулбахор”</td>
+                                    <td>24</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+
+                                <!--                                Toshkent viloyat-->
+
+                                <tr>
+                                    <th scope="row" rowspan="7">10</th>
+                                    <td rowspan="7"> Тошкент вилояти</td>
+                                    <td>“Яллама”</td>
+                                    <td>103</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Навоий”</td>
+                                    <td>89</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“С.Нажимов”</td>
+                                    <td>89</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Ойбек”</td>
+                                    <td>68</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Ғишткўприк”</td>
+                                    <td>106</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kz"></i> Қозоғистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Фарход”</td>
+                                    <td>21</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Бекобод-авто”</td>
+                                    <td>17</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+
+                                <!--                                Farg'ona viloyati-->
+
+                                <tr>
+                                    <th scope="row" rowspan="6">11</th>
+                                    <td rowspan="6"> Фарғона вилояти</td>
+                                    <td>“Фарғона”</td>
+                                    <td>60</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Андархон”</td>
+                                    <td>24</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Ўзбекистон”</td>
+                                    <td>39</td>
+                                    <td>куну-тун</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+
+                                <tr>
+                                    <td>“Риштон”</td>
+                                    <td>12</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Ровот”</td>
+                                    <td>13</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tj"></i> Тожикистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Сўх”</td>
+                                    <td>24</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-kg"></i> Қирғизистон</td>
+                                </tr>
+
+                                <!-- Xorazm vil. -->
+
+                                <tr>
+                                    <th scope="row" rowspan="2">11</th>
+                                    <td rowspan="2"> Хоразм вилояти</td>
+                                    <td>“Дўстлик”</td>
+                                    <td>17</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+                                </tr>
+                                <tr>
+                                    <td>“Шовот”</td>
+                                    <td>20</td>
+                                    <td>куннинг ёруғ вақтида</td>
+                                    <td><i class="flag-icon flag-icon-tm"></i> Туркманистон</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+
         </div>
     </div>
+
     <!--end page wrapper -->
     <!--start overlay-->
     <script src="assets/js/highcharts/proj4.js"></script>
     <script src="assets/js/highcharts/highmaps.js"></script>
+    <!--                <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>-->
     <script src="assets/js/highcharts/offline-exporting.js"></script>
     <script src="assets/js/highcharts/marker-clusters.js"></script>
     <script src="assets/js/highcharts/coloraxis.js"></script>
-    <script>
-        (async () => {
-            const topology = await fetch('assets/js/uz.json').then(response => response.json());
-            const data = [
-                ['uz-fa', 10], ['uz-tk', 11], ['uz-an', 12], ['uz-ng', 13],
-                ['uz-ji', 14], ['uz-si', 15], ['uz-ta', 16], ['uz-bu', 17],
-                ['uz-kh', 18], ['uz-qr', 19], ['uz-nw', 20], ['uz-sa', 21],
-                ['uz-qa', 22], ['uz-su', 23]
-            ];
-            Highcharts.mapChart('container', {
-                chart: {
-                    map: topology
-                },
-                title:
-                    false,
-                mapNavigation: {
-                    enabled: true,
 
-                },
-                // tooltip: {
-                //     headerFormat: '',
-                //     // pointFormat: '<b>{point.name}</b>',
-                //     formatter: function () {
-                //         return 'The <b>' + this.point.name +  '</b>';
-                //     }
-                // },
-                tooltip: {
-                    shared: true,
-                    useHTML: true,
-                    headerFormat: '<table><tr><th colspan="2" style="text-align: center">{point.key}</th></tr>',
-                    pointFormat: '<tr><td style="color: {series.color}">Чегарадош мамлакат: ' + '<b>{point.border}</b> </td></tr>' +
-                        '<tr><td style="color: {series.color}">Пост штати : ' + ' <b>{point.postEm};</b> ' + '  Хизматда: ' + '<b>{point.inServ}</b></td></tr>' +
-                        '<tr><td style="color: {series.color}">ИКМ қўрилмаси: ' + ' <b>{point.ikm}</b></td> </tr>' +
-                        '<tr><td style="color: {series.color}">Автотарози: ' + ' <b>{point.autoScales}</b></td></tr>' +
-                        '<tr><td style="color: {series.color}">Кутилаётган импорт: ' + ' <b>{point.penImport}</b></td></tr>',
-                    footerFormat: '</table>',
-                    valueDecimals: 2
-                },
-                plotOptions: {
-                    mappoint: {
-                        cluster: {
-                            enabled: true,
-                            layoutAlgorithm: {
-                                type: 'optimalizedKmeans'
-                            }
-                        }
-                    }
-                },
-                series: [{
-                    data: data,
-                    name: 'DBQ Targetlash markazi',
-                    borderColor: '#BADA55',
-                    nullColor: 'rgba(200, 200, 200, 0.3)',
-                    showInLegend: false
-                },
-                    {
-                    name: 'Separators',
-                    type: 'mapline',
-                    nullColor: '#707070',
-                    showInLegend: false,
-                    enableMouseTracking: false,
-                    accessibility: {
-                        enabled: false
-                    }
-                },
-                {
-                    type: 'mappoint',
-                    colorKey: 'clusterPointsAmount',
-                    name: 'АВТО ЧЕГАРА БОЖХОНА ПОСТЛАРИ',
-                    color: '#000',
-                    data: [
-                        {
-                            name: 'Довуд ота ЧБП',
-                            border: 'Қозиғистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'Rapiscan Eagle G60',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '35004',
-                            lat: 44.894319,
-                            lon: 55.999802
-                        },
-                        {
-                            name: 'Ойбек ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'THSCAN MT1213LT',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '27011',
-                            lat: 40.546330,
-                            lon: 69.212287
-                        },
-                        {
-                            name: 'Олот ЧБП',
-                            border: 'Туркманистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'Rapiscan Eagle M60, Z-portal',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '06010',
-                            lat: 39.228152,
-                            lon: 63.715349
-                        },
-                        {
-                            name: 'Маданият ЧБП',
-                            border: 'Қирғизистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '03009',
-                            lat: 41.048738,
-                            lon: 72.345371
-                        },
-                        {
-                            name: 'Учқўрғон ЧБП',
-                            border: 'Қирғизистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '14003',
-                            lat: 41.101680,
-                            lon: 72.178605
-                        },
-                        {
-                            name: 'Дўстлик ЧБП',
-                            border: 'Қирғизистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'Z-portal',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '03002',
-                            lat: 40.573016,
-                            lon: 72.759930
-                        },
-                        {
-                            name: 'Фарғона ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '30004',
-                            lat: 40.150668,
-                            lon: 71.731310
-                        },
-                        {
-                            name: 'Ўзбекистон ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'Rapiscan Eagle M60',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '30010',
-                            lat: 40.274883,
-                            lon: 72.043306
-                        },
-                        {
-                            name: 'Андархон ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '30005',
-                            lat: 40.365731,
-                            lon: 70.456673
-                        },
-                        {
-                            name: 'Жартепа ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'HCVM-3026',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '18002',
-                            lat: 39.518556,
-                            lon: 67.398534
-                        },
-                        {
-                            name: 'Хўжайли ЧБП',
-                            border: 'Туркманистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '35003',
-                            lat: 42.373640,
-                            lon: 59.301489
-                        },
-                        {
-                            name: 'Дўстлик ЧБП',
-                            border: 'Туркманистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '33004',
-                            lat: 41.182392,
-                            lon: 61.370012
-                        },
-                        {
-                            name: 'Айритом ЧБП',
-                            border: 'Афғонистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'Rapiscan Eagle M60, HCVM-3026, Z-portal',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '22017',
-                            lat: 37.237196,
-                            lon: 67.423023
-                        },
-                        {
-                            name: 'Сариосиё ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'Rapiscan Eagle G60',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '22003',
-                            lat: 38.502649,
-                            lon: 68.102012
-                        },
-                        {
-                            name: 'Сўх ЧБП',
-                            border: 'Қирғизистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '30012',
-                            lat: 40.124864,
-                            lon: 71.081251
-                        },
-                        {
-                            name: 'Қўшкент ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '08007',
-                            lat: 40.061050,
-                            lon: 68.948379
-                        },
-                        {
-                            name: 'Ховособод ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '24002',
-                            lat: 40.195342,
-                            lon: 68.847035
-                        },
-                        {
-                            name: 'Бекобод авто ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'THSCA',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '27013',
-                            lat: 40.212324,
-                            lon: 69.204949
-                        },
-                        {
-                            name: 'Фарҳод ЧБП',
-                            border: 'Тожикистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '27023',
-                            lat: 40.196277,
-                            lon: 69.301853
-                        },
-                        {
-                            name: 'Қарши-Керки ЧБП',
-                            border: 'Туркманистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            lat: 38.351854,
-                            lon: 65.467507,
-                            code: '10008',
-                        },
-                        {
-                            name: 'С.Нажимов ЧБП',
-                            lat: 41.523911,
-                            lon: 69.408371,
-                            code: '27009',
-                            border: 'Қозиғистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'THSCAN MT1213LT',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            label: {position: 'top'}
-                        },
-                        {
-                            name: 'Сирдарё ЧБП',
-                            lat: 40.835917,
-                            lon: 68.564990,
-                            code: '24003',
-                            border: 'Қозиғистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'Rapiscan Eagle G60',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)'
-                        },
-                        {
-                            name: 'Яллама ЧБП',
-                            lat: 40.968030,
-                            lon: 68.726585,
-                            code: '27001',
-                            border: 'Қозиғистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'THSCAN MT1213LT, Z-portal',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)'
-                        },
-                        {
-                            name: 'Ғишткўприк ЧБП', label: {position: 'top'},
-                            lat: 41.471112,
-                            lon: 69.357866,
-                            code: '27021',
-                            border: 'Қозиғистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)'
-                        },
-                        {
-                            name: 'ДБҚ Таргетлаш маркази',
-                            lat: 41.310426,
-                            lon: 69.250539,
-                            border: false,
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: false
-                        },
-                        {
-                            name: 'Косонсой ЧБП',
-                            border: 'Қозиғистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: false,
-                            autoScales: false,
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '14004',
-                            lat: 41.291736,
-                            lon: 71.538209
-                        },
-                        {
-                            name: 'Навоий ЧБП',
-                            border: 'Қозиғистон',
-                            postEm: 103,
-                            inServ: 36,
-                            ikm: 'THSCAN MT1213LT',
-                            autoScales: 'Соз ҳолатда',
-                            penImport: '15 партия (ПВХ гранула, Пиломатериалы, Игрушки, Ворсовое полотно....)',
-                            code: '27008',
-                            lat: 41.454453,
-                            lon: 69.208586,
-                            dataLabels: {
-                                align: 'left',
-                                x: 5,
-                                verticalAlign: 'middle'
-                            }
-                        }]
-                }]
-            });
-        })();
-    </script>
+
 </div>
 <!--end wrapper-->
 <!--start switcher-->
@@ -833,6 +725,7 @@
         <hr/>
         <p class="mb-0">Gaussian Texture</p>
         <hr>
+
         <ul class="switcher">
             <li id="theme1"></li>
             <li id="theme2"></li>
@@ -844,6 +737,7 @@
         <hr>
         <p class="mb-0">Gradient Background</p>
         <hr>
+
         <ul class="switcher">
             <li id="theme7"></li>
             <li id="theme8"></li>
@@ -870,53 +764,17 @@
 <script src="assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
 <script src="assets/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js"></script>
 <script src="assets/plugins/sparkline-charts/jquery.sparkline.min.js"></script>
-<script src="assets/plugins/apexcharts-bundle/js/apexcharts.min.js"></script>
 <script src="assets/plugins/jquery-knob/excanvas.js"></script>
 <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
 <script>
     $(function () {
         $(".knob").knob();
     });
-
-    $(document).ready(function () {
-        $(document).on('click', '.auto_common_statistics', function () {
-            document.body.style.cursor = 'wait';
-            $.ajax({
-                type: 'POST',
-                url: '<%=request.getContextPath()%>/transport_common.jsp',
-                dataType: 'html',
-                header: 'Content-type: text/html; charset=utf-8',
-                success: function (res) {
-                    $('.page-content').empty().html(res);
-                    document.body.style.cursor = 'default';
-                },
-                error: function (res) {
-                    console.log(res);
-                    document.body.style.cursor = 'default';
-                }
-            });
-        });
-        $(document).on('click', '.auto_nostandard_statistics', function () {
-            document.body.style.cursor = 'wait';
-            $.ajax({
-                type: 'POST',
-                url: '<%=request.getContextPath()%>/transport_no_standard.jsp',
-                dataType: 'html',
-                header: 'Content-type: text/html; charset=utf-8',
-                success: function (res) {
-                    $('.page-content').empty().html(res);
-                    document.body.style.cursor = 'default';
-                },
-                error: function (res) {
-                    console.log(res);
-                    document.body.style.cursor = 'default';
-                }
-            });
-        });
-    });
 </script>
 <script src="assets/js/index.js"></script>
 <!--app JS-->
 <script src="assets/js/app.js"></script>
+
 </body>
+
 </html>
