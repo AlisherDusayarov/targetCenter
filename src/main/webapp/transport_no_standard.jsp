@@ -305,5 +305,6 @@
             });
         });
     });
+
     new PerfectScrollbar('.table_div');
 </script>

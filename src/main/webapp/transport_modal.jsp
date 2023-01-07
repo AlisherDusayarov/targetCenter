@@ -43,6 +43,7 @@
 </div>
 <script>
     $(document).ready(function () {
+        alert('123232323232');
         $.ajax({
             type: 'GET',
             url: '<%=request.getContextPath()%>/autodecl_modal',

@@ -106,20 +106,20 @@
     <div class="card">
         <div class="card-body">
             <div class="table_div" style="position: relative; min-height: 100px; max-height: 305px">
-            <table class="table table-bordered mb-0 table-hover font-20 table_risk5">
-                <thead class="table-light fw-bold text-center">
-                <tr>
-                    <th scope="col">№</th>
-                    <th scope="col" class="d-none">Пост коди</th>
-                    <th scope="col">Юк жўнатувчи давлат</th>
-                    <th scope="col">Қабул қилувчи пост номи</th>
-                    <th scope="col">Товар партияси сони</th>
-                    <th scope="col">Фоизи</th>
-                </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+                <table class="table table-bordered mb-0 table-hover font-20 table_risk5">
+                    <thead class="table-light fw-bold text-center">
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col" class="d-none">Пост коди</th>
+                        <th scope="col">Юк жўнатувчи давлат</th>
+                        <th scope="col">Қабул қилувчи пост номи</th>
+                        <th scope="col">Товар партияси сони</th>
+                        <th scope="col">Фоизи</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -305,5 +305,6 @@
             });
         });
     });
+
     new PerfectScrollbar('.table_div');
 </script>
