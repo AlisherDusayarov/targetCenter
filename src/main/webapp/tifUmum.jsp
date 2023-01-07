@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!doctype html>
 <html lang="uz">
 
@@ -30,7 +31,9 @@
     <div class="sidebar-wrapper" data-simplebar="true">
         <div class="sidebar-header">
             <div>
-                <img src="assets/images/gtk_image.png" class="logo-icon" alt="logo icon">
+                <a href="index.jsp">
+                    <img src="assets/images/gtk_image.png" class="logo-icon" alt="logo icon" />
+                </a>
             </div>
             <div>
                 <h4 class="logo-text">Таргетлаш маркази</h4>
@@ -61,9 +64,9 @@
                     <div class="menu-title">АВТО</div>
                 </a>
                 <ul>
-                    <li><a href="avtoUmum.html"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    <li><a href="transport_common.jsp"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
                     </li>
-                    <li><a href="avtoNostandart.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    <li><a href="transport_no_standard.jsp"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
 
                 </ul>
@@ -77,7 +80,7 @@
                 <ul>
                     <li><a href="temUmum.jsp"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
                     </li>
-                    <li><a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    <li><a href="#"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
 
                 </ul>
@@ -89,11 +92,10 @@
                     <div class="menu-title">АВИА</div>
                 </a>
                 <ul>
-                    <li><a href="#"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
+                    <li><a href="#" class="auto_common_statistics"><i class="bx bx-right-arrow-alt"></i>УМУМИЙ СТАТИСТИКА</a>
                     </li>
-                    <li><a href="app-chat-box.html"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
+                    <li><a href="#" class="auto_nostandard_statistics"><i class="bx bx-right-arrow-alt"></i>НОСТАНДАРТ ҲОЛАТЛАР</a>
                     </li>
-
                 </ul>
             </li>
 
@@ -1412,8 +1414,39 @@
 <script src="assets/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
 <script>
     $(document).ready(function () {
-        $('#Transaction-History').DataTable({
-            lengthMenu: [[6, 10, 20, -1], [6, 10, 20, 'Todos']]
+        $(document).on('click', '.auto_common_statistics', function () {
+            document.body.style.cursor = 'wait';
+            $.ajax({
+                type: 'POST',
+                url: '<%=request.getContextPath()%>/transport_common.jsp',
+                dataType: 'html',
+                header: 'Content-type: text/html; charset=utf-8',
+                success: function (res) {
+                    $('.page-content').empty().html(res);
+                    document.body.style.cursor = 'default';
+                },
+                error: function (res) {
+                    console.log(res);
+                    document.body.style.cursor = 'default';
+                }
+            });
+        });
+        $(document).on('click', '.auto_nostandard_statistics', function () {
+            document.body.style.cursor = 'wait';
+            $.ajax({
+                type: 'POST',
+                url: '<%=request.getContextPath()%>/transport_no_standard.jsp',
+                dataType: 'html',
+                header: 'Content-type: text/html; charset=utf-8',
+                success: function (res) {
+                    $('.page-content').empty().html(res);
+                    document.body.style.cursor = 'default';
+                },
+                error: function (res) {
+                    console.log(res);
+                    document.body.style.cursor = 'default';
+                }
+            });
         });
     });
 </script>

@@ -29,7 +29,6 @@ body {
     width: 100%;
     padding: 0 15px;
 }
-
 .home-logo svg {
     height: 120px;
     filter: drop-shadow(2px 2px 10px rgba(255,255,255,.25));
@@ -37,5 +36,11 @@ body {
 .slider__one .col-xl-6:first-child .home-item {
     transform: translateX(180px);
     position: relative;
+}
+.modal-xl, .modal-title, .modal-body {
+    max-width: 1300px;
+}
+.bg-thirty {
+    background-color: #054577 !important
 }
 

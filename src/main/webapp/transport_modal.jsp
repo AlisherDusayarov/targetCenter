@@ -9,18 +9,18 @@
 <%
     String parameter = request.getParameter("parameter");
 %>
-<div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content bg-primary">
+<div class="modal-dialog modal-xl">
+    <div class="modal-content bg-thirty">
         <div class="modal-header">
-            <h5 class="modal-title ps-3">121212121122</h5>
+            <h5 class="modal-title ps-3">Мазкур транспорт бундай товарларни ташишга мос эмас</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Чиқиш"></button>
         </div>
         <div class="modal-body">
             <div class="row">
-                <div class="col-12 col-lg-12 col-xl-6">
-                    <div class="table_div" style="position: relative; min-height: 100px; max-height: 375px">
-                        <table class="table table-bordered mb-0 table-hover font-20 table_risk10">
-                            <thead class="table-light fw-bold text-center">
+                <div class="col-12 col-lg-12 col-xl-12">
+                    <div class="table_div" style="position: relative; min-height: 100px; max-height: 680px">
+                        <table class="table table-bordered mb-0 table-hover table_risk10">
+                            <thead class="table-light font-16 fw-bold text-center">
                             <tr>
                                 <th scope="col">№</th>
                                 <th scope="col">Пост номи</th>
@@ -43,7 +43,6 @@
 </div>
 <script>
     $(document).ready(function () {
-        alert('123232323232');
         $.ajax({
             type: 'GET',
             url: '<%=request.getContextPath()%>/autodecl_modal',
@@ -53,14 +52,14 @@
             success: function (res) {
                 let tbody = '';
                 for(var i = 0; i < res.autodecl_modal.length; i++) {
-                    tbody += '<tr><td><h5 class="font-16 mb-1 text-center">' + res.autodecl_modal[i].order + '</h5></td>' +
-                        '<td><h5 class="font-16 mb-1 text-center">' + res.autodecl_modal[i].post_name + '</h5></td>' +
-                        '<td><h5 class="font-16 mb-1 text-center">' + res.autodecl_modal[i].decl_number + '</h5></td>' +
-                        '<td><h5 class="font-16 mb-1 text-center">' + res.autodecl_modal[i].start_country + '</h5></td>' +
-                        '<td><h5 class="font-16 mb-1 text-center">' + res.autodecl_modal[i].end_country + '</h5></td>' +
-                        '<td><h5 class="font-16 mb-1 text-center">' + res.autodecl_modal[i].channel_way + '</h5></td>' +
-                        '<td><h5 class="font-16 mb-1 text-center">' + res.autodecl_modal[i].auto_number + '</h5></td>' +
-                        '<td><h5 class="font-16 mb-1 text-center">' + res.autodecl_modal[i].goods_name + '</h5></td></tr>';
+                    tbody += '<tr><td><h5 class="font-14 mb-1 text-center">' + res.autodecl_modal[i].order + '</h5></td>' +
+                        '<td><h5 class="font-14 mb-1 text-center">' + res.autodecl_modal[i].post_name + '</h5></td>' +
+                        '<td><h5 class="font-14 mb-1 text-center"><a href="http://cargo.customs.uz" target="_blank">' + res.autodecl_modal[i].decl_number + '</a></h5></td>' +
+                        '<td><h5 class="font-14 mb-1 text-center">' + res.autodecl_modal[i].start_country + '</h5></td>' +
+                        '<td><h5 class="font-14 mb-1 text-center">' + res.autodecl_modal[i].end_country + '</h5></td>' +
+                        '<td><h5 class="font-14 mb-1 text-center">' + res.autodecl_modal[i].channel_way + '</h5></td>' +
+                        '<td><h5 class="font-14 mb-1 text-center">' + res.autodecl_modal[i].auto_number + '</h5></td>' +
+                        '<td><h5 class="font-14 mb-1 text-center">' + res.autodecl_modal[i].goods_name + '</h5></td></tr>';
                 }
                 $('.table_risk10 > tbody').empty().append(tbody);
             },
