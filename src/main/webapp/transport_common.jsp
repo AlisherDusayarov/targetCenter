@@ -16,7 +16,8 @@
                         <h4 class="my-1"></h4>
                         <div></div>
                     </div>
-                    <div class="widgets-icons ms-auto"><i class='bx bxs-binoculars'></i>
+                    <div class="widgets-icons ms-auto">
+                        <img src="assets/images/tru.svg" alt="truck" width="42px">
                     </div>
                 </div>
                 <div id="transport_count"></div>
@@ -32,7 +33,8 @@
                         <h4 class="my-1"></h4>
                         <div></div>
                     </div>
-                    <div class="widgets-icons ms-auto"><i class='bx bxs-group'></i>
+                    <div class="widgets-icons ms-auto">
+                        <img src="assets/images/doc1.svg" alt="" width="40px">
                     </div>
                 </div>
                 <div id="autodecl_count"></div>
@@ -48,7 +50,9 @@
                         <h4 class="my-1"></h4>
                         <div></div>
                     </div>
-                    <div class="widgets-icons ms-auto"><i class='bx bxs-wallet'></i>
+                    <div class="widgets-icons ms-auto">
+                        <img src="assets/images/coin.svg" alt="" width="42px">
+
                     </div>
                 </div>
                 <div id="good_price"></div>
@@ -101,7 +105,7 @@
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center">
                             <div class="product-img">
-                                <img src="assets/images/icons/chair.png" alt=""/>
+                                <img src="assets/images/exp.svg" alt=""/>
                             </div>
                             <div class="ms-2">
                                 <h6 class="mb-1">Экспорт</h6>
@@ -117,7 +121,7 @@
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center">
                             <div class="product-img">
-                                <img src="assets/images/icons/user-interface.png" alt=""/>
+                                <img src="assets/images/imp.svg" alt=""/>
                             </div>
                             <div class="ms-2">
                                 <h6 class="mb-1">Импорт</h6>
@@ -133,7 +137,7 @@
                     <div class="col-sm-6">
                         <div class="d-flex align-items-center">
                             <div class="product-img">
-                                <img src="assets/images/icons/watch.png" alt=""/>
+                                <img src="assets/images/transit.svg" alt=""/>
                             </div>
                             <div class="ms-2">
                                 <h6 class="mb-1">Транзит</h6>

@@ -921,7 +921,7 @@
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <div class="product-img">
-                                            <img src="assets/images/icons/chair.png" alt=""/>
+                                            <img src="assets/images/exp.svg" alt=""/>
                                         </div>
                                         <div class="ms-2">
                                             <h6 class="mb-1">Экспорт</h6>
@@ -941,7 +941,7 @@
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <div class="product-img">
-                                            <img src="assets/images/icons/user-interface.png" alt=""/>
+                                            <img src="assets/images/imp.svg" alt=""/>
                                         </div>
                                         <div class="ms-2">
                                             <h6 class="mb-1">импорт</h6>
@@ -961,7 +961,7 @@
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <div class="product-img">
-                                            <img src="assets/images/icons/watch.png" alt=""/>
+                                            <img src="assets/images/transit.svg" alt=""/>
                                         </div>
                                         <div class="ms-2">
                                             <h6 class="mb-1">Транзит</h6>

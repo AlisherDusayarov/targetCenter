@@ -254,7 +254,7 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="examplePrimaryModal">
+<div class="modal fade" id="exampleExtraLargeModal">
 </div>
 <script src="assets/js/dashboard-human-resources.js"></script>
 <script>
@@ -297,7 +297,7 @@
                 header: 'Content-type: text/html; charset=utf-8',
                 data: {'parameter': '10'},
                 success: function (res) {
-                    $('#examplePrimaryModal').html(res).modal('show');
+                    $('#exampleExtraLargeModal').html(res).modal('show');
                 },
                 error: function (res) {
                     console.log("Хатолик рўй берди: " + res);
