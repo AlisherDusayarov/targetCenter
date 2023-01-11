@@ -413,6 +413,8 @@
     <!--start overlay-->
     <script src="assets/js/highcharts/proj4.js"></script>
     <script src="assets/js/highcharts/highmaps.js"></script>
+    <script src="assets/js/highcharts/exporting.js"></script>
+    <script src="assets/js/highcharts/accessibility.js"></script>
     <script src="assets/js/highcharts/offline-exporting.js"></script>
     <script src="assets/js/highcharts/marker-clusters.js"></script>
     <script src="assets/js/highcharts/coloraxis.js"></script>
@@ -469,9 +471,15 @@
                     name: 'DBQ Targetlash markazi',
                     borderColor: '#BADA55',
                     nullColor: 'rgba(200, 200, 200, 0.3)',
+                    color: '#244db9',
+                    states: {
+                        hover: {
+                            color: '#5c83da'
+                        }
+                    },
                     showInLegend: false
                 },
-                    {
+                    /*{
                     name: 'Separators',
                     type: 'mapline',
                     nullColor: '#707070',
@@ -480,7 +488,7 @@
                     accessibility: {
                         enabled: false
                     }
-                },
+                },*/
                 {
                     type: 'mappoint',
                     colorKey: 'clusterPointsAmount',

@@ -16,11 +16,8 @@
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
     <link href="assets/css/icons.css" rel="stylesheet">
-
-
     <title>Таргетлаш маркази</title>
 </head>
 
@@ -921,7 +918,7 @@
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <div class="product-img">
-                                            <img src="assets/images/icons/chair.png" alt=""/>
+                                            <img src="assets/images/exp.svg" alt="" />
                                         </div>
                                         <div class="ms-2">
                                             <h6 class="mb-1">Экспорт</h6>
@@ -941,7 +938,7 @@
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <div class="product-img">
-                                            <img src="assets/images/icons/user-interface.png" alt=""/>
+                                            <img src="assets/images/imp.svg" alt="" />
                                         </div>
                                         <div class="ms-2">
                                             <h6 class="mb-1">импорт</h6>
@@ -961,7 +958,7 @@
                                 <div class="col-sm-6">
                                     <div class="d-flex align-items-center">
                                         <div class="product-img">
-                                            <img src="assets/images/icons/watch.png" alt=""/>
+                                            <img src="assets/images/transit.svg" alt="" />
                                         </div>
                                         <div class="ms-2">
                                             <h6 class="mb-1">Транзит</h6>
@@ -1073,14 +1070,13 @@
                         <div class="card-body">
                             <div class="d-flex align-items-center">
                                 <div>
-                                    <h5 class="mb-0">Инспекторлар расмийлаштирган
-                                        Декларациялар, постга нисбатан фоиз
+                                    <h5 class="mb-0">Инспекторлар расмийлаштирган Декларациялар, постга нисбатан фоиз
                                     </h5>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="customers-list p-3 mb-3">
+                        <div class="customers-list p-3 mb-3" style="height: 255px">
                             <div class="customers-list-item d-flex align-items-center border-top border-bottom p-2 cursor-pointer">
                                 <div class="">
                                     <img src="assets/images/avatars/avatar-3.png" class="rounded-circle" width="46"
@@ -1450,7 +1446,7 @@
         });
     });
 </script>
-<script src="assets/js/dashboard-eCommerce.js"></script>
+<script src="assets/js/tiff.js"></script>
 <!--app JS-->
 <script src="assets/js/app.js"></script>
 <script>

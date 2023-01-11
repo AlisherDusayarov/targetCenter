@@ -28,7 +28,7 @@
                     <div></div>
                     <div></div>
                 </div>
-                <a class="hex-content" href="#">
+                <a class="hex-content" href="tifUmum.jsp">
                                             <span class="hex-content-inner">
                                                 <span class="icon" style="align-content: center!important;">
                                                     <img src="assets/images/dec.svg" alt="" width="45px">
@@ -89,7 +89,7 @@
                     <div></div>
                     <div></div>
                 </div>
-                <a class="hex-content" href="#">
+                <a class="hex-content" href="temUmum.jsp">
                                             <span class="hex-content-inner">
                                                 <span class="icon">
                                                   <iconify-icon icon="emojione-v1:train"></iconify-icon>

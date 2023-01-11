@@ -7,12 +7,11 @@ body {
     padding: 0;
     height: 100%;
 }
-#loop  {
+#loop {
     position: absolute;
-
     z-index: 99999;
 }
-.welcome{
+.welcome {
     color: #fff;
     font-size: 40px;
     text-transform: uppercase;
@@ -43,4 +42,3 @@ body {
 .bg-thirty {
     background-color: #054577 !important
 }
-

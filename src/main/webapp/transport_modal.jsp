@@ -8,11 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     String parameter = request.getParameter("parameter");
+    String title = request.getParameter("title");
 %>
 <div class="modal-dialog modal-xl">
     <div class="modal-content bg-thirty">
         <div class="modal-header">
-            <h5 class="modal-title ps-3">Мазкур транспорт бундай товарларни ташишга мос эмас</h5>
+            <h5 class="modal-title ps-3"><%=title%></h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" title="Чиқиш"></button>
         </div>
         <div class="modal-body">
@@ -20,7 +21,7 @@
                 <div class="col-12 col-lg-12 col-xl-12">
                     <div class="table_div" style="position: relative; min-height: 100px; max-height: 680px">
                         <table class="table table-bordered mb-0 table-hover table_risk10">
-                            <thead class="table-light font-16 fw-bold text-center">
+                            <thead class="table-light font-16 fw-bold text-center align-middle">
                             <tr>
                                 <th scope="col">№</th>
                                 <th scope="col">Пост номи</th>
@@ -70,5 +71,5 @@
         });
     });
 
-    new PerfectScrollbar('.table_div');
+    new PerfectScrollbar('.modal-body .table_div');
 </script>

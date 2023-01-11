@@ -17,7 +17,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
     <link href="assets/css/icons.css" rel="stylesheet">
 
@@ -1032,7 +1031,7 @@
 
 <!--app JS-->
 <script src="assets/js/app.js"></script>
-<script src="assets/js/dashboard-eCommerce.js"></script>
+<script src="assets/js/tiff.js"></script>
 
 <script>
     new PerfectScrollbar('.product-list');

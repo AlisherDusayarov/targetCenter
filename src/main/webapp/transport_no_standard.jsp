@@ -26,7 +26,7 @@
                     <div class="card-body">
                         <div class="text-white font-35 d-flex data_risk17">
                             <i class='bx bx-trending-up px-2'></i>
-                            <div></div>
+                            <div class="cursor-pointer risk17_modal"></div>
                         </div>
                         <p class="mb-0 mt-1">Автотранспорт нархидан бир неча баробар қиммат</p>
                     </div>
@@ -40,7 +40,7 @@
                     <div class="card-body">
                         <div class="text-white font-35 d-flex data_risk8">
                             <i class='bx bx-unite px-2'></i>
-                            <div></div>
+                            <div class="cursor-pointer risk8_modal"></div>
                         </div>
                         <p class="mb-0 mt-1">Жўнатувчи учун товар ноодатий</p>
                     </div>
@@ -52,7 +52,7 @@
                     <div class="card-body">
                         <div class="text-white font-35 d-flex data_risk9">
                             <i class='bx bxs-search'></i>
-                            <div></div>
+                            <div class="cursor-pointer risk9_modal"></div>
                         </div>
                         <p class="mb-0 mt-1">Товарларнинг ҳажми ва миқдори ноодатий</p>
                     </div>
@@ -66,7 +66,7 @@
                     <div class="card-body">
                         <div class="text-white font-35 d-flex data_risk14">
                             <i class='bx bx-recycle px-2'></i>
-                            <div></div>
+                            <div class="cursor-pointer risk14_modal"></div>
                         </div>
                         <p class="mb-0 mt-1">Автотранспорт учун ноодатий ташиш амалга оширилмоқда</p>
                     </div>
@@ -78,7 +78,7 @@
                     <div class="card-body">
                         <div class="text-white font-35 d-flex data_risk27">
                             <i class='bx bx-wrench px-2'></i>
-                            <div></div>
+                            <div class="cursor-pointer risk27_modal"></div>
                         </div>
                         <p class="mb-0 mt-1">Товарлар ноодатий қадоқланган</p><br />
                     </div>
@@ -227,7 +227,7 @@
             </div>
         </div>
     </div>
-    <div class="col-12 col-lg-4 col-xl-4 ">
+    <div class="col-12 col-lg-4 col-xl-4">
         <div class="card radius-10">
             <div class="card-body">
                 <div class="d-flex align-items-center">
@@ -295,7 +295,82 @@
                 url: '<%=request.getContextPath()%>/transport_modal.jsp',
                 dataType: 'html',
                 header: 'Content-type: text/html; charset=utf-8',
-                data: {'parameter': '10'},
+                data: { 'parameter': '10', 'title': $('.data_risk10').next().text() },
+                success: function (res) {
+                    $('#exampleExtraLargeModal').html(res).modal('show');
+                },
+                error: function (res) {
+                    console.log("Хатолик рўй берди: " + res);
+                }
+            });
+        });
+        $(document).on('click', '.risk17_modal', function () {
+            $.ajax({
+                type: 'POST',
+                url: '<%=request.getContextPath()%>/transport_modal.jsp',
+                dataType: 'html',
+                header: 'Content-type: text/html; charset=utf-8',
+                data: { 'parameter': '17', 'title': $('.data_risk17').next().text() },
+                success: function (res) {
+                    $('#exampleExtraLargeModal').html(res).modal('show');
+                },
+                error: function (res) {
+                    console.log("Хатолик рўй берди: " + res);
+                }
+            });
+        });
+        $(document).on('click', '.risk8_modal', function () {
+            $.ajax({
+                type: 'POST',
+                url: '<%=request.getContextPath()%>/transport_modal.jsp',
+                dataType: 'html',
+                header: 'Content-type: text/html; charset=utf-8',
+                data: { 'parameter': '8', 'title': $('.data_risk8').next().text() },
+                success: function (res) {
+                    $('#exampleExtraLargeModal').html(res).modal('show');
+                },
+                error: function (res) {
+                    console.log("Хатолик рўй берди: " + res);
+                }
+            });
+        });
+        $(document).on('click', '.risk9_modal', function () {
+            $.ajax({
+                type: 'POST',
+                url: '<%=request.getContextPath()%>/transport_modal.jsp',
+                dataType: 'html',
+                header: 'Content-type: text/html; charset=utf-8',
+                data: { 'parameter': '9', 'title': $('.data_risk9').next().text() },
+                success: function (res) {
+                    $('#exampleExtraLargeModal').html(res).modal('show');
+                },
+                error: function (res) {
+                    console.log("Хатолик рўй берди: " + res);
+                }
+            });
+        });
+        $(document).on('click', '.risk14_modal', function () {
+            $.ajax({
+                type: 'POST',
+                url: '<%=request.getContextPath()%>/transport_modal.jsp',
+                dataType: 'html',
+                header: 'Content-type: text/html; charset=utf-8',
+                data: { 'parameter': '14', 'title': $('.data_risk14').next().text() },
+                success: function (res) {
+                    $('#exampleExtraLargeModal').html(res).modal('show');
+                },
+                error: function (res) {
+                    console.log("Хатолик рўй берди: " + res);
+                }
+            });
+        });
+        $(document).on('click', '.risk27_modal', function () {
+            $.ajax({
+                type: 'POST',
+                url: '<%=request.getContextPath()%>/transport_modal.jsp',
+                dataType: 'html',
+                header: 'Content-type: text/html; charset=utf-8',
+                data: { 'parameter': '27', 'title': $('.data_risk27').next().text() },
                 success: function (res) {
                     $('#exampleExtraLargeModal').html(res).modal('show');
                 },

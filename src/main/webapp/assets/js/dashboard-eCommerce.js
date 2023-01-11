@@ -366,6 +366,63 @@ $(function() {
 
 
 	e = {
+		series: [{
+			name: "Яшил",
+			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
+		}, {
+			name: "Сариқ",
+			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
+		}, {
+			name: "Қизил",
+			data: [240, 160, 671, 414, 555, 257, 901, 613, 727, 414, 555, 257]
+		}],
+		chart: {
+			foreColor: "#9ba7b2",
+			type: "bar",
+			height: 300,
+			toolbar: {
+				show: !1
+			}
+		},
+		plotOptions: {
+			bar: {
+				horizontal: !1,
+				columnWidth: "55%",
+				endingShape: "rounded"
+			}
+		},
+		grid: {
+			borderColor: 'rgba(255, 255, 255, 0.12)',
+			show: true,
+		},
+		dataLabels: {
+			enabled: !1
+		},
+		stroke: {
+			show: !0,
+			width: 2,
+			colors: ["transparent"]
+		},
+		colors: ["rgba(255, 255, 255, 0.60)", "#fff", "rgba(255, 255, 255, 0.25)"],
+		xaxis: {
+			categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+		},
+		fill: {
+			opacity: 1
+		},
+		tooltip: {
+			theme: "dark",
+			y: {
+				formatter: function (e) {
+					return " " + e + " дона"
+				}
+			}
+		}
+	};
+	new ApexCharts(document.querySelector("#chart4"), e).render();
+
+
+	e = {
 		series: [35, 55, 14],
 		chart: {
 			height: 240,

@@ -25,13 +25,12 @@ $(function () {
                 risk17[i] = response.autodecl_nostandard_week[i].risk17;
                 risk27[i] = response.autodecl_nostandard_week[i].risk27;
             }
-            today_risk8 = parseInt(response.autodecl_nostandard_week[6].risk8);
-            today_risk9 = parseInt(response.autodecl_nostandard_week[6].risk9);
-            today_risk10 = parseInt(response.autodecl_nostandard_week[6].risk10);
-            today_risk14 = parseInt(response.autodecl_nostandard_week[6].risk14);
-            today_risk17 = parseInt(response.autodecl_nostandard_week[6].risk17);
-            today_risk27 = parseInt(response.autodecl_nostandard_week[6].risk27);
-            console.log(today_risk10);
+            today_risk8 = parseInt(response.autodecl_nostandard_week[response.autodecl_nostandard_week.length - 1].risk8);
+            today_risk9 = parseInt(response.autodecl_nostandard_week[response.autodecl_nostandard_week.length - 1].risk9);
+            today_risk10 = parseInt(response.autodecl_nostandard_week[response.autodecl_nostandard_week.length - 1].risk10);
+            today_risk14 = parseInt(response.autodecl_nostandard_week[response.autodecl_nostandard_week.length - 1].risk14);
+            today_risk17 = parseInt(response.autodecl_nostandard_week[response.autodecl_nostandard_week.length - 1].risk17);
+            today_risk27 = parseInt(response.autodecl_nostandard_week[response.autodecl_nostandard_week.length - 1].risk27);
             Risk10(risk10, week_date);
             Risk17(risk17, week_date);
             Risk8(risk8, week_date);
@@ -74,7 +73,7 @@ $(function () {
             },
             colors: ['#FFFFFF'],
             series: [{
-                name: 'Қиймати: ',
+                name: 'Қиймати ',
                 data: data1
             }],
             xaxis: {
@@ -134,7 +133,7 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Қиймати: ',
+                name: 'Қиймати ',
                 data: data1
             }],
             xaxis: {
@@ -180,7 +179,7 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Қиймати: ',
+                name: 'Қиймати ',
                 data: data1
             }],
             xaxis: {
@@ -226,7 +225,7 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Қиймати: ',
+                name: 'Қиймати ',
                 data: data1
             }],
             xaxis: {
@@ -272,7 +271,7 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Қиймати: ',
+                name: 'Қиймати ',
                 data: data1
             }],
             xaxis: {
@@ -319,7 +318,7 @@ $(function () {
             },
             colors: ["#fff"],
             series: [{
-                name: 'Қиймати: ',
+                name: 'Қиймати ',
                 data: data1
             }],
             xaxis: {
