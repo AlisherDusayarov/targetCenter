@@ -22,6 +22,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/app.css" rel="stylesheet">
     <link href="assets/css/icons.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
     <title>Таргетлаш маркази</title>
 </head>
 <body class="bg-theme bg-theme1">
